@@ -29,7 +29,6 @@ BallSpeed = 300
 StickSpeed = 100
 
 function ncine.on_pre_init(cfg)
-	cfg.window_title = "Lua ncPong"
 if nc.ANDROID then
 	cfg.data_path = "asset::"
 else
@@ -39,7 +38,9 @@ else
 	end
 	cfg.data_path = data_dir
 end
-	cfg.window_icon = "icon48.png"
+
+	cfg.window.title = "Lua ncPong"
+	cfg.window.icon = "icon48.png"
 
 	return cfg
 end

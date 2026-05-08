@@ -49,8 +49,8 @@ void MyEventHandler::onPreInit(nc::AppConfiguration &config)
 	#endif
 #endif
 
-	config.windowTitle = "ncPong";
-	config.windowIconFilename = "icon48.png";
+	config.window.title = "ncPong";
+	config.window.iconFilename = "icon48.png";
 }
 
 void MyEventHandler::onInit()
